@@ -1,6 +1,6 @@
 #!/bin/bash
 
-FORBIDDEN='TODO:BEFORE_COMMIT
+FORBIDDEN='TODO:BEFORE_COMMIT'
 
 git diff --cached --name-only | \
   xargs grep --with-filename -n $FORBIDDEN && \
